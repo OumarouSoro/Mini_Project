@@ -1,7 +1,7 @@
  # Mini_project data analysis workflow
  ## Written by Oumarou Soro and Mike Mugo
 
-# Whole Genome Sequencing of Extended-Spectrum Beta-Lactamase (ESBL)-Producing _Escherichia coli _Isolated From a Wastewater Treatment Plant in China
+# Whole Genome Sequencing of Extended-Spectrum Beta-Lactamase (ESBL)-Producing _Escherichia coli_ Isolated From a Wastewater Treatment Plant in China
    Xiawei Jiang, Xinjie Cui, Hao Xu, Wenhong Liu, Fangfang Tao, Tiejuan Shao, Xiaoping Pan, Beiwen Zheng
    
 **Citation:** Jiang X, Cui X, Xu H, Liu W, Tao F, Shao T, Pan X and Zheng B (2019) Whole Genome Sequencing of Extended-Spectrum Beta-Lactamase (ESBL)-Producing _Escherichia coli_ Isolated From a Wastewater Treatment Plant in China. Front. Microbiol. 10:1797. [doi: 10.3389/fmicb.2019.01797](https://www.frontiersin.org/articles/10.3389/fmicb.2019.01797/full)
