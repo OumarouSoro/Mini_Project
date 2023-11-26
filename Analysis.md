@@ -8,10 +8,80 @@
 Strain typing refers to the process of characterizing or identifying different strains of a particular organism, such as bacteria, viruses, or fungi. It involves analyzing genetic, biochemical, or other specific features to differentiate between various subtypes or variants within a species.
 In microbiology, strain typing is crucial for understanding microbes' diversity and behaviour, especially concerning infectious diseases. The aim of this project is to reproduce the strain typing data analysis of _**Eschericia coli**_ genomes. The bacteria were isolated from wastewater treatment plants in Taizhou, China.
 The assembled genome files were downloaded from DDBJ/ENA/GenBank under bioproject `(PRJNA433283)`. The analysis was performed using the command line mlst 2.23.0.
+  ### Script for moving all fna files from different directories to the same directory
+```
+#!/bin/bash
+#Script written by Oumarou Soro and Mike Mugo
+#Date: 20 November 2023
+cd ./
+#Creating a new directory
+mkdir mini_project
+#Moving files
+cd GCF_003000775.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003000815.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003000835.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003000855.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003000865.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003000895.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003000915.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003000935.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003000945.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003000975.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003000995.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003001015.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003001025.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003001055.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003001075.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003001085.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003001115.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003001125.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003001155.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+cd -
+cd GCF_003064065.1
+cp *.fna /home/soro/Assignment/ncbi_dataset/mini_project
+echo "Done"
+```
   ### mlst Script
 ```  
 #!/bin/bash
-#Script written by Oumarou Soro
+#Script written by Oumarou Soro and Mike Mugo
 #Date: 25 November 2023  
 for i in *.fna
 do
@@ -37,7 +107,7 @@ To address this issue, a multidisciplinary approach is required, involving healt
    #### Script for AMR screening using abricate 1.0.1
 ```  
  #!/bin/bash
- #Script written by Oumarou Soro
+ #Script written by Oumarou Soro and Mike Mugo
  #Date: 25 November 2023
  #Go to the current directory
     cd ./
