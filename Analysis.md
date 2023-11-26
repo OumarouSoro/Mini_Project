@@ -119,4 +119,4 @@ To address this issue, a multidisciplinary approach is required, involving healt
 echo "ARG screening was done successfully!"
 
 ```
-[Virulenfinder](https://cge.food.dtu.dk/services/VirulenceFinder/) and [Plasmidfinder](https://cge.food.dtu.dk/services/PlasmidFinder/) are also some online tools that served to determine virulence genes and plasmids as the AMR screening with abricate was not able to give these information.
+[Virulenfinder 2.0](https://cge.food.dtu.dk/services/VirulenceFinder/) and [Plasmidfinder 2.0](https://cge.food.dtu.dk/services/PlasmidFinder/) are also some online tools that served to determine virulence genes and plasmids as the AMR screening with abricate was not able to give these information.
