@@ -9,7 +9,7 @@
    ### Strain Typing
 Strain typing refers to the process of characterizing or identifying different strains of a particular organism, such as bacteria, viruses, or fungi. It involves analyzing genetic, biochemical, or other specific features to differentiate between various subtypes or variants within a species.
 In microbiology, strain typing is crucial for understanding microbes' diversity and behaviour, especially concerning infectious diseases. The aim of this project is to reproduce the strain typing data analysis of _**Eschericia coli**_ genomes. The bacteria were isolated from wastewater treatment plants in Taizhou, China.
-The assembled genome files were downloaded from DDBJ/ENA/GenBank under bioproject `(PRJNA433283)` in `fna format`. The analysis was performed using the command line mlst 2.23.0.
+The assembled genome files were downloaded from DDBJ/ENA/GenBank under bioproject [PRJNA433283](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA433283) in `fna format`. The analysis was performed using the command line mlst 2.23.0.
   ### Script for moving all fna files from different directories to the same directory
 ```
 #!/bin/bash
