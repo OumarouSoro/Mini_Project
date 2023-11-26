@@ -1,4 +1,4 @@
- # Mini project data analysis workflow
+ # Mini_project data analysis workflow
  ## Written by Oumarou Soro and Mike Mugo
 
 # Whole Genome Sequencing of Extended-Spectrum Beta-Lactamase (ESBL)-Producing _Escherichia coli _Isolated From a Wastewater Treatment Plant in China
@@ -9,12 +9,12 @@
    ### Strain Typing
 Strain typing refers to the process of characterizing or identifying different strains of a particular organism, such as bacteria, viruses, or fungi. It involves analyzing genetic, biochemical, or other specific features to differentiate between various subtypes or variants within a species.
 In microbiology, strain typing is crucial for understanding microbes' diversity and behaviour, especially concerning infectious diseases. The aim of this project is to reproduce the strain typing data analysis of _**Eschericia coli**_ genomes. The bacteria were isolated from wastewater treatment plants in Taizhou, China.
-The assembled genome files were downloaded from DDBJ/ENA/GenBank under bioproject `(PRJNA433283)`. The analysis was performed using the command line mlst 2.23.0.
+The assembled genome files were downloaded from DDBJ/ENA/GenBank under bioproject `(PRJNA433283)` in `fna format`. The analysis was performed using the command line mlst 2.23.0.
   ### Script for moving all fna files from different directories to the same directory
 ```
 #!/bin/bash
 #Script written by Oumarou Soro and Mike Mugo
-#Date: 20 November 2023
+#Date: 18 November 2023
 cd ./
 #Creating a new directory
 mkdir mini_project
@@ -84,7 +84,7 @@ echo "Done"
 ```  
 #!/bin/bash
 #Script written by Oumarou Soro and Mike Mugo
-#Date: 25 November 2023  
+#Date: 20 November 2023  
 for i in *.fna
 do
 mlst $i -q | cut -f1,2,3 >> E_coli_Sequence_Types.tsv
@@ -110,7 +110,7 @@ To address this issue, a multidisciplinary approach is required, involving healt
 ```  
  #!/bin/bash
  #Script written by Oumarou Soro and Mike Mugo
- #Date: 25 November 2023
+ #Date: 20 November 2023
  #Go to the current directory
     cd ./
  #Screening for AMR, Virulence genes, and Plasmids`
