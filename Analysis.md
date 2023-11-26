@@ -1,8 +1,10 @@
-# Mini project data analysis workflow
-## Written by Oumarou Soro and Mike Mugo
+ # Mini project data analysis workflow
+ ## Written by Oumarou Soro and Mike Mugo
 
-# Whole Genome Sequencing of Extended-Spectrum Beta-Lactamase (ESBL)-Producing Escherichia coli Isolated From a Wastewater Treatment Plant in China
+# Whole Genome Sequencing of Extended-Spectrum Beta-Lactamase (ESBL)-Producing _Escherichia coli _Isolated From a Wastewater Treatment Plant in China
    Xiawei Jiang, Xinjie Cui, Hao Xu, Wenhong Liu, Fangfang Tao, Tiejuan Shao, Xiaoping Pan, Beiwen Zheng
+   
+**Citation:** Jiang X, Cui X, Xu H, Liu W, Tao F, Shao T, Pan X and Zheng B (2019) Whole Genome Sequencing of Extended-Spectrum Beta-Lactamase (ESBL)-Producing _Escherichia coli_ Isolated From a Wastewater Treatment Plant in China. Front. Microbiol. 10:1797. [doi: 10.3389/fmicb.2019.01797](https://www.frontiersin.org/articles/10.3389/fmicb.2019.01797/full)
 
    ### Strain Typing
 Strain typing refers to the process of characterizing or identifying different strains of a particular organism, such as bacteria, viruses, or fungi. It involves analyzing genetic, biochemical, or other specific features to differentiate between various subtypes or variants within a species.
@@ -117,3 +119,4 @@ To address this issue, a multidisciplinary approach is required, involving healt
 echo "ARG screening was done successfully!"
 
 ```
+[Virulenfinder](https://cge.food.dtu.dk/services/VirulenceFinder/) and [Plasmidfinder](https://cge.food.dtu.dk/services/PlasmidFinder/) are also some online tools that served to determine virulence genes and plasmids as the AMR screening with abricate was not able to give these information.
