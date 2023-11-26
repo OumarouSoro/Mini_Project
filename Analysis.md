@@ -10,6 +10,10 @@ In microbiology, strain typing is crucial for understanding microbes' diversity 
 The assembled genome files were downloaded from DDBJ/ENA/GenBank under bioproject `(PRJNA433283)`. The analysis was performed using the command line mlst 2.23.0.
   ### mlst Script
  ` #!/bin/bash`
+ 
+ `#Script written Oumarou Soro`
+
+`#Date: 25 November 2023`
   
  `for i in *.fna
 do`
@@ -23,12 +27,30 @@ AMR stands for antimicrobial resistance, a significant global health concern. It
 When microbes become resistant to antimicrobial drugs, infections become more difficult to treat, leading to prolonged illness, increased healthcare costs, and higher mortality rates. Overuse and misuse of antimicrobial drugs in both humans and animals, as well as poor infection prevention and control practices, contribute to the development of antimicrobial resistance.
 To address this issue, a multidisciplinary approach is required, involving healthcare professionals, policymakers, researchers, veterinarians, and the general public. Strategies to combat AMR include:
 
-1. Promoting appropriate use of antimicrobials: Ensuring these drugs are prescribed and used only when necessary, at the right doses, and for the correct duration.
+1. Promoting appropriate use of antimicrobials: ensuring these drugs are prescribed and used only when necessary, at the right doses, and for the correct duration.
 
 2. Enhancing infection prevention and control: Implementing measures to prevent the spread of infections in healthcare settings, communities, and agriculture.
 
-3. Investing in research and development: Developing new antimicrobial drugs, diagnostic tools, and alternative treatments to combat resistant infections.
+3. Investing in research and development: developing new antimicrobial drugs, diagnostic tools, and alternative treatments to combat resistant infections.
 
-4. Surveillance and monitoring: Tracking the spread of resistant microbes and identifying emerging resistance patterns.
+4. Surveillance and monitoring: tracking the spread of resistant microbes and identifying emerging resistance patterns.
 
-5. Education and awareness: Educating healthcare professionals, patients, and the public about the importance of using antimicrobials responsibly and understanding the implications of antimicrobial resistance.
+5. Education and awareness: educating healthcare professionals, patients, and the public about the importance of using antimicrobials responsibly and understanding the implications of antimicrobial resistance.
+   #### Script for AMR screening using abricate 1.0.1
+    `#!/bin/bash`
+    `#Script written Oumarou Soro`
+
+    `#Date: 25 November 2023`
+
+    `#Go to the current directory`
+
+    `cd ./`
+
+    `#Screening for AMR, Virulence genes, and Plasmids`
+
+    `abricate *.fna >> ARG_results.tsv`
+
+    `#After the ARG screening`
+
+    `echo "ARG screening was done successfully!"`
+
