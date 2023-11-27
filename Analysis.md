@@ -114,7 +114,9 @@ To address this issue, a multidisciplinary approach is required, involving healt
  #Go to the current directory
     cd ./
  #Screening for AMR, Virulence genes, and Plasmids`
-  abricate *.fna >> ARG_results.tsv
+  abricate --db plasmidfinder --csv *.fna > plasmids_results.csv
+  abricate --db vfdb --csv *.fna > virulence_results.csv
+  abricate *.fna --csv > AMR_results.csv
  #After the ARG screening
 echo "ARG screening was done successfully!"
 
