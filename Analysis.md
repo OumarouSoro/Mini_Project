@@ -84,7 +84,7 @@ echo "Done"
 ```  
 #!/bin/bash
 script written by Oumarou Soro and Mike Mugo
-Date: 20 November 20, 2023  
+Date: November 20, 2023  
 for i in *.fna
 do
 mlst $i -q | cut -f1, 2, 3 >> E_coli_Sequence_Types.tsv
