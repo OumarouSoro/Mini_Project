@@ -83,11 +83,11 @@ echo "Done"
   ### mlst Script
 ```  
 #!/bin/bash
-#Script written by Oumarou Soro and Mike Mugo
-#Date: 20 November 2023  
+script written by Oumarou Soro and Mike Mugo
+Date: 20 November 20, 2023  
 for i in *.fna
 do
-mlst $i -q | cut -f1,2,3 >> E_coli_Sequence_Types.tsv
+mlst $i -q | cut -f1, 2, 3 >> E_coli_Sequence_Types.tsv
 echo "You did a perfect job!"
 done
 
@@ -107,18 +107,18 @@ To address this issue, a multidisciplinary approach is required, involving healt
 
 5. Education and awareness: educating healthcare professionals, patients, and the public about the importance of using antimicrobials responsibly and understanding the implications of antimicrobial resistance.
    #### Script for AMR screening using abricate 1.0.1
-```  
+```
  #!/bin/bash
- #Script written by Oumarou Soro and Mike Mugo
- #Date: 20 November 2023
- #Go to the current directory
+script written by Oumarou Soro and Mike Mugo
+Date: 20 November 20, 2023
+Go to the current directory
     cd ./
- #Screening for AMR, Virulence genes, and Plasmids`
+Screening for AMR, Virulence genes, and Plasmids`
   abricate --db plasmidfinder --csv *.fna > plasmids_results.csv
   abricate --db vfdb --csv *.fna > virulence_results.csv
   abricate *.fna --csv > AMR_results.csv
- #After the ARG screening
+After the ARG screening
 echo "ARG screening was done successfully!"
 
 ```
-[Virulenfinder 2.0](https://cge.food.dtu.dk/services/VirulenceFinder/) and [Plasmidfinder 2.0](https://cge.food.dtu.dk/services/PlasmidFinder/) are also some online tools that served to determine virulence genes and plasmids as the AMR screening with abricate was not able to give these information.
+[Virulenfinder 2.0](https://cge.food.dtu.dk/services/VirulenceFinder/), [Plasmidfinder 2.0](https://cge.food.dtu.dk/services/PlasmidFinder/), and [ResFinder](http://genepi.food.dtu.dk/resfinder) are some online tools of the Centre for Genetic Epidemiology that serve to determine virulence genes, plasmids, and AMR genes. But for this mini-project, we used the command line for the Antimicrobial Resistance Genes (ARGs) screening.
